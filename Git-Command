@@ -1,0 +1,63 @@
+1. git init
+turn local repository into git repository locally.
+
+
+2. git add filename 
+add file or all files to the staging area for Git. its necessary to add new files in the staging before commiting.
+2A. git add .
+add all files to the staging
+2B. git add -A
+add all files to the staging
+
+3. git commit -m "commit message"
+commit changes locally.
+3A. git commit -a -m "commit message"
+commit all changes locally.
+
+4. git status
+returns the current status of working git local directory
+
+5. git config
+Name and Email address assigned to commits from a local computer.
+globally:
+	git config --global user.name "abuzar"
+	git config --global user.email "syedabuzar12@gmail.com"
+locally:
+	git config user.name "abuzar"
+	git config user.email "syedabuzar12@gmail.com"
+
+Branch:
+
+6. git branch
+return all branches
+
+7. git branch feature
+create a new branch with name feature 
+
+7A. git checkout -b new
+create branch new and checkin to new branch
+
+8. git checkout feature
+will switch/checkin to feature branch
+
+9. git merge feature
+merge feature branch into master branch
+
+10. git branch -d feature
+delete feature branch but if there are unmerged changes it will prompt
+git branch -D will not prompt.
+
+Remote Repository:
+
+11. git remote add origin <"url of remote repo">
+connect local repo to remote repo
+
+12. git clone <url of remote repository>
+clone remote repository locally
+
+13. git pull origin master
+get all remote changes in local repository. in short get latest version.
+
+14. git push origin master
+push all changes to remote repository, equal to TFS checkin, but first we have to add changes to staging and commit these changes locally then push them onto remote repo.
+
