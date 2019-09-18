@@ -12,6 +12,8 @@ add file or all files to the staging area for Git. its necessary to add new file
 add all files to the staging
 2B. git add -A
 add all files to the staging
+2C. git config core.autocrlf true
+LF will be replaced by CRLF in services/subscribe.py.
 
 3. git commit -m "commit message"
 commit changes locally.
